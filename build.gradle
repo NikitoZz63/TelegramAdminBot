@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group = 'adminTGbot'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
+}
+
+dependencies {
+    implementation 'org.telegram:telegrambots-longpolling:8.0.0'
+    implementation 'org.telegram:telegrambots-client:8.0.0'
+
+    implementation 'org.slf4j:slf4j-simple:2.0.7'
+
+    implementation 'org.hibernate:hibernate-core:6.6.11.Final'
+    implementation 'org.postgresql:postgresql:42.7.5'
+
+    implementation 'org.projectlombok:lombok:1.18.36'
+}
+
+application {
+    mainClass = 'adminTGbot.Main' // Укажи свой главный класс
+}
+
+
+shadowJar {
+    archiveBaseName.set('adminTGbot') // Название файла JAR
+    archiveClassifier.set('all') // Добавляет "-all" в названии JAR
+    archiveVersion.set('1.0')
+}
+
+tasks.named('build') {
+    dependsOn tasks.named('shadowJar')
+}
