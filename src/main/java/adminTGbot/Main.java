@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         String botToken = System.getenv("TELEGRAM_BOT_TOKEN");
         if (botToken == null || botToken.isEmpty()) {
-            throw new IllegalStateException("Ошибка: Переменная окружения TELEGRAM_BOT_TOKEN не задана!");
+            throw new IllegalStateException("Ошибка: Переменная окружения TELEGRAM_BOT_TOKEN не задана");
         }
 
 
