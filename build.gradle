@@ -15,6 +15,8 @@ java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(21))
     }
+    sourceCompatibility = '21'  // Добавляем совместимость с исходным кодом
+    targetCompatibility = '21'  // Устанавливаем целевую совместимость
 }
 
 dependencies {
