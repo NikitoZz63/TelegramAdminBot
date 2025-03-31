@@ -1,0 +1,30 @@
+name: Build and Deploy Bot
+
+on:
+  push:
+    branches:
+      - main  # Запуск при пуше в основную ветку
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Операционная система для выполнения
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Клонируем репозиторий
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v3  # Устанавливаем Java
+        with:
+          distribution: 'temurin'  # Указываем поставщика Java
+          java-version: '21'  # Устанавливаем Java 21
+
+      - name: Build with Gradle
+        run: ./gradlew build  # Сборка проекта через Gradle
+
+      - name: Publish to GitHub Releases
+        uses: softprops/action-gh-release@v2  # Загружаем в релизы GitHub
+        with:
+          files: build/libs/*.jar  # Указываем путь к собранному .jar файлу
+          tag_name: latest
+          token: ${{ secrets.GITHUB_TOKEN }}  # Токен для публикации
