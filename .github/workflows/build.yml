@@ -35,7 +35,7 @@ jobs:
           files: build/libs/*.jar  # Указываем путь к JAR-файлу
           tag_name: ${{ env.TAG }}  # Используем уникальный тег (дата/время)
           release_name: "Release ${{ env.TAG }}"  # Название релиза
-          token: ${{ secrets.GITHUB_TOKEN }}  # Токен GitHub
+          token: ${{ secrets.MY_GITHUB_TOKEN }}  # Токен GitHub
 
   deploy:
     runs-on: ubuntu-latest
