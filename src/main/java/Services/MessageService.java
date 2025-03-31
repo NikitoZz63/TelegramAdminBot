@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 
 public class MessageService {
 
-    private static final int MESSAGE_DELETION_TIMER = 86_400_000;
+    private static final int MESSAGE_DELETION_TIMER = 4_000_000;
     private final TelegramClient telegramClient;
     private final LoggerToTgChat tgLogger;
     private final Long logChatId;
