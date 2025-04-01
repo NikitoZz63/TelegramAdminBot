@@ -111,7 +111,7 @@ public class UserManager {
 
             Integer messageId = messageService.sendMsg(chatId, welcomeMessage);
             if (messageId != null) {
-                messageService.scheduleMessageDeletion(chatId, messageId); // 24 часа
+                messageService.scheduleMessageDeletion(chatId, messageId);
             }
             tgLogger.log("Добавлен новый пользователь " + newUserName, logChatId);
         }

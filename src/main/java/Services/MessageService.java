@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 
 public class MessageService {
 
-    private static final int MESSAGE_DELETION_TIMER = 4_000_000;
+    private static final int MESSAGE_DELETION_TIMER = 3600; //1 час
     private final TelegramClient telegramClient;
     private final LoggerToTgChat tgLogger;
     private final Long logChatId;
@@ -67,6 +67,7 @@ public class MessageService {
     }
 
     void scheduleMessageDeletion(long chatId, Integer messageId) {
+
         new Thread(() -> {
             try {
                 Thread.sleep(MESSAGE_DELETION_TIMER * 1000L);

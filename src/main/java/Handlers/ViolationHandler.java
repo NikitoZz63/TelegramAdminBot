@@ -41,7 +41,7 @@ public class ViolationHandler {
                 messageService.sendMsg(chatId, "<b>Пользователь</b> " + username + " <b> забанен за размещение ссылки</b>");
             } else {
                 userManager.muteUser(chatId, userId);
-                tgLogger.log("Mute 24 часа " + username, LOG_CHAT_ID);
+                tgLogger.log("Mute 24 часа  " + username, LOG_CHAT_ID);
                 messageService.sendMsg(chatId, username + " ❗ Предупреждение ❗\n" +
                         "<b>Вы нарушили правила нашего чата, поэтому ваша возможность отправлять сообщения ограничена на 24 часа.</b>\n" +
                         "Пожалуйста, ознакомьтесь с правилами.");
