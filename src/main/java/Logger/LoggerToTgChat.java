@@ -11,7 +11,7 @@ public class LoggerToTgChat {
     private static LoggerToTgChat instance;
     private static LoggerToTgChat myLogger;
     private static int counter;
-    private final TelegramClient telegramClient = new OkHttpTelegramClient("7071269675:AAFobbl5xTLUQsbnWQ7F8li_PyzqGvWUnoc");
+    TelegramClient telegramClient = new OkHttpTelegramClient(System.getenv("TELEGRAM_BOT_TOKEN"));
     LocalDateTime currentDateTime = LocalDateTime.now();
 
     public LoggerToTgChat() {
