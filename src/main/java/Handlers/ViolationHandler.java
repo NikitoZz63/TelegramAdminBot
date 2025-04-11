@@ -10,6 +10,7 @@ import org.telegram.telegrambots.meta.api.objects.message.Message;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Pattern;
@@ -36,11 +37,12 @@ public class ViolationHandler {
 
     public void txtToSet() {
         String line;
-        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("forbiddenWords.txt"))) {
+        try (BufferedReader bufferedReader = new BufferedReader(
+                new InputStreamReader(getClass().getClassLoader().getResourceAsStream("forbiddenWords.txt")))) {
             while ((line = bufferedReader.readLine()) != null) {
                 forbiddenWords.add(line.trim().toLowerCase());
             }
-        } catch (IOException e) {
+        } catch (IOException | NullPointerException e) {
             tgLogger.log("Ошибка загрузки запрещённых слов: " + e.getMessage(), LOG_CHAT_ID);
         }
     }
