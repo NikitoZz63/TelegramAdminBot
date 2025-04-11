@@ -27,7 +27,11 @@ public class UpdateHandler {
         }
 
         if (message.hasText() && violationHandler.containsLink(message.getText())) {
-            violationHandler.processLinkViolation(update, chatId, userId, message);
+            violationHandler.processViolation(update, chatId, userId, message);
+        }
+
+        if (message.hasText() && violationHandler.forbiddenWords(message.getText())) {
+            violationHandler.processViolation(update, chatId, userId, message);
         }
     }
 }

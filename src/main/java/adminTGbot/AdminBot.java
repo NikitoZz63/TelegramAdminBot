@@ -25,6 +25,8 @@ public class AdminBot implements LongPollingSingleThreadUpdateConsumer {
         ViolationHandler violationHandler = new ViolationHandler(messageService, userManager);
 
         this.updateHandler = new UpdateHandler(violationHandler, userManager);
+
+        violationHandler.txtToSet();
     }
 
     @Override
