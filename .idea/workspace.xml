@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="adminTGbot:jar2" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dba64b9c-026f-4750-a630-ae3d2f3291a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/handlers/ViolationHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/adminTGbot_jar2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Handlers/UpdateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/UpdateHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Handlers/ViolationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/ViolationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Handlers/WelcomeMessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/WelcomeMessageProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logger/LoggerToTgChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logger/LoggerToTgChat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Services/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Services/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/adminTGbot/AdminBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adminTGbot/AdminBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/adminTGbot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adminTGbot/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/forbiddenWords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/forbiddenWords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="adminTGbot" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="com.intellij.jpb.JpaEntity" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NikitoZz63&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:NikitoZz63/TelegramAdminBot.git&quot;,
+    &quot;accountId&quot;: &quot;04d50a67-3469-4c3c-80e7-69485255c047&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.telegram/telegrambots-meta/8.0.0/dfa2f45498fe37162e4f278c495a99885ce96003/telegrambots-meta-8.0.0.jar!/org/telegram/telegrambots/meta/api/methods/send/SendMessage.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2uWOqFix0wB36geYIwEEMgTZyIc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Build adminTGbot.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.ViolationHandlerTest.executor": "Run",
+    "Gradle.adminTGbot [:adminTGbot.Main.main()].executor": "Run",
+    "Gradle.adminTGbot.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.codeium.enabled": "true",
+    "com.codeium.snoozedEndTime": "0",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/nik/IdeaProjects/adminTGbot/src/main/java/adminTGbot/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.27011493",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dba64b9c-026f-4750-a630-ae3d2f3291a4" name="Changes" comment="" />
+      <created>1742361053797</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742361053797</updated>
+      <workItem from="1742361055818" duration="8208000" />
+      <workItem from="1742373632865" duration="277000" />
+      <workItem from="1742373912851" duration="1046000" />
+      <workItem from="1742397438030" duration="1009000" />
+      <workItem from="1742398949249" duration="2786000" />
+      <workItem from="1742539942282" duration="4173000" />
+      <workItem from="1742544125519" duration="4222000" />
+      <workItem from="1742818326501" duration="4088000" />
+      <workItem from="1742827821257" duration="1000" />
+      <workItem from="1742827830316" duration="14933000" />
+      <workItem from="1742919135257" duration="976000" />
+      <workItem from="1742920173774" duration="1969000" />
+      <workItem from="1742922670808" duration="2050000" />
+      <workItem from="1742988605823" duration="2036000" />
+      <workItem from="1743070459608" duration="4922000" />
+      <workItem from="1743090276641" duration="2131000" />
+      <workItem from="1743092417992" duration="475000" />
+      <workItem from="1743138704057" duration="6596000" />
+      <workItem from="1743146674524" duration="5646000" />
+      <workItem from="1743339809968" duration="2436000" />
+      <workItem from="1743342258480" duration="179000" />
+      <workItem from="1743342438445" duration="14000" />
+      <workItem from="1743342483260" duration="3987000" />
+      <workItem from="1743347255264" duration="3766000" />
+      <workItem from="1743351690091" duration="34000" />
+      <workItem from="1743351726545" duration="4625000" />
+      <workItem from="1743390788224" duration="2516000" />
+      <workItem from="1743394921589" duration="1375000" />
+      <workItem from="1743396308133" duration="2977000" />
+      <workItem from="1743399306880" duration="112000" />
+      <workItem from="1743399426049" duration="66000" />
+      <workItem from="1743399501896" duration="701000" />
+      <workItem from="1743400210478" duration="15567000" />
+      <workItem from="1743433744435" duration="2055000" />
+      <workItem from="1743476977121" duration="1552000" />
+      <workItem from="1743483982170" duration="95000" />
+      <workItem from="1743558620366" duration="923000" />
+      <workItem from="1743859185027" duration="653000" />
+      <workItem from="1744301347544" duration="7912000" />
+      <workItem from="1744362640759" duration="2294000" />
+      <workItem from="1744389546983" duration="616000" />
+      <workItem from="1744390327777" duration="155000" />
+      <workItem from="1744390491877" duration="327000" />
+      <workItem from="1744390832403" duration="181000" />
+      <workItem from="1744812657402" duration="69000" />
+      <workItem from="1744812729071" duration="29000" />
+      <workItem from="1744812768245" duration="518000" />
+      <workItem from="1744813296718" duration="97000" />
+      <workItem from="1744813396760" duration="1404000" />
+      <workItem from="1744814823943" duration="2464000" />
+      <workItem from="1744820474686" duration="450000" />
+      <workItem from="1744822457299" duration="5000" />
+      <workItem from="1744822579045" duration="2950000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/handlers/UpdateHandler.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/handlers/UpdateHandler.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

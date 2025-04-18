@@ -1,14 +1,13 @@
-package Handlers;
+package handlers;
 
 import DAO.UserDAO;
-import Logger.LoggerToTgChat;
-import Services.MessageService;
-import Services.UserManager;
+import logger.LoggerToTgChat;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.message.Message;
+import services.MessageService;
+import services.UserManager;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashSet;
@@ -16,19 +15,24 @@ import java.util.Set;
 import java.util.regex.Pattern;
 
 public class ViolationHandler {
+
     private static final LoggerToTgChat tgLogger = LoggerToTgChat.getInstance();
     private static final Pattern URL_PATTERN = Pattern.compile(
             "(?i)\\b(?:https?://|www\\.|t\\.me/|bit\\.ly/|[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6})\\S*"
     );
     private static final long LOG_CHAT_ID = -4762815401L;
     private static final Set<String> forbiddenWords = new HashSet<>();
-    private final MessageService messageService;
-    private final UserManager userManager;
+    private MessageService messageService;
+    private UserManager userManager;
 
 
     public ViolationHandler(MessageService messageService, UserManager userManager) {
         this.messageService = messageService;
         this.userManager = userManager;
+    }
+
+    public ViolationHandler() {
+
     }
 
     public boolean containsLink(String text) {
@@ -42,16 +46,34 @@ public class ViolationHandler {
             while ((line = bufferedReader.readLine()) != null) {
                 forbiddenWords.add(line.trim().toLowerCase());
             }
+            tgLogger.log("Загрузка запрещённых слов завершена", LOG_CHAT_ID);
         } catch (IOException | NullPointerException e) {
             tgLogger.log("Ошибка загрузки запрещённых слов: " + e.getMessage(), LOG_CHAT_ID);
         }
     }
 
-    public boolean forbiddenWords(String text) {
-        String lowerText = text.toLowerCase();
+    public String normalizeText(String input) {
+        input = input.replaceAll("x", "х")
+                .replaceAll("y", "у")
+                .replaceAll("e", "е")
+                .replaceAll("o", "о")
+                .replaceAll("a", "а")
+                .replaceAll("c", "с")
+                .replaceAll("p", "р");
+
+        // Убираем лишние символы
+        input = input.toLowerCase()
+                .replaceAll("[^а-яё]", ""); // убираем все, кроме кириллических
+
+        return input;
+    }
+
+    public boolean containsForbiddenWords(String text) {
+        String normalized = normalizeText(text);
+
         for (String word : forbiddenWords) {
-            Pattern pattern = Pattern.compile("\\b" + Pattern.quote(word) + "\\b");
-            if (pattern.matcher(lowerText).find()) {
+//            Pattern pattern = Pattern.compile("\\b" + Pattern.quote(word) + "\\b");
+            if (normalized.contains(word)) {
                 tgLogger.log("Нарушение запрещенных слов: " + text, LOG_CHAT_ID);
                 return true;
             }

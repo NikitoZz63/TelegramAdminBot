@@ -1,8 +1,8 @@
-package Handlers;
+package handlers;
 
-import Services.UserManager;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.message.Message;
+import services.UserManager;
 
 public class UpdateHandler {
     private final ViolationHandler violationHandler;
@@ -30,7 +30,7 @@ public class UpdateHandler {
             violationHandler.processViolation(update, chatId, userId, message);
         }
 
-        if (message.hasText() && violationHandler.forbiddenWords(message.getText())) {
+        if (message.hasText() && violationHandler.containsForbiddenWords(message.getText())) {
             violationHandler.processViolation(update, chatId, userId, message);
         }
     }

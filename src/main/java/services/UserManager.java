@@ -1,8 +1,8 @@
-package Services;
+package services;
 
 import DAO.UserDAO;
-import Entity.UserEntity;
-import Logger.LoggerToTgChat;
+import entity.UserEntity;
+import logger.LoggerToTgChat;
 import org.telegram.telegrambots.meta.api.methods.groupadministration.BanChatMember;
 import org.telegram.telegrambots.meta.api.methods.groupadministration.GetChatAdministrators;
 import org.telegram.telegrambots.meta.api.methods.groupadministration.RestrictChatMember;

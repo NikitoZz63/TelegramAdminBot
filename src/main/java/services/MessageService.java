@@ -1,6 +1,6 @@
-package Services;
+package services;
 
-import Logger.LoggerToTgChat;
+import logger.LoggerToTgChat;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.updatingmessages.DeleteMessage;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;

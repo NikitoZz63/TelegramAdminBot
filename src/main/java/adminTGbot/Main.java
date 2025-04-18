@@ -1,6 +1,6 @@
 package adminTGbot;
 
-import Logger.LoggerToTgChat;
+import logger.LoggerToTgChat;
 import org.telegram.telegrambots.longpolling.TelegramBotsLongPollingApplication;
 
 
