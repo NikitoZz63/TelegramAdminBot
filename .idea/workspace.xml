@@ -10,28 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba64b9c-026f-4750-a630-ae3d2f3291a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/handlers/ViolationHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/adminTGbot_jar2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Handlers/UpdateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/UpdateHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Handlers/ViolationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/ViolationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Handlers/WelcomeMessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/WelcomeMessageProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logger/LoggerToTgChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logger/LoggerToTgChat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/MessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/adminTGbot/AdminBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adminTGbot/AdminBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/adminTGbot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adminTGbot/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/forbiddenWords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/forbiddenWords.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/handlers/ViolationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/ViolationHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,34 +80,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.Build adminTGbot.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.ViolationHandlerTest.executor": "Run",
-    "Gradle.adminTGbot [:adminTGbot.Main.main()].executor": "Run",
-    "Gradle.adminTGbot.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.codeium.enabled": "true",
-    "com.codeium.snoozedEndTime": "0",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/nik/IdeaProjects/adminTGbot/src/main/java/adminTGbot/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.27011493",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.Build adminTGbot.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ViolationHandlerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.adminTGbot [:adminTGbot.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.adminTGbot.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;com.codeium.snoozedEndTime&quot;: &quot;0&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/nik/IdeaProjects/adminTGbot/src/main/java/adminTGbot/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.27011493&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -202,27 +182,13 @@
       <workItem from="1744820474686" duration="450000" />
       <workItem from="1744822457299" duration="5000" />
       <workItem from="1744822579045" duration="2950000" />
+      <workItem from="1744952021252" duration="363000" />
+      <workItem from="1744978904686" duration="1308000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/handlers/UpdateHandler.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/handlers/UpdateHandler.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

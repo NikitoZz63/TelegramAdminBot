@@ -36,7 +36,11 @@ public class ViolationHandler {
     }
 
     public boolean containsLink(String text) {
-        return URL_PATTERN.matcher(text).find();
+        if (URL_PATTERN.matcher(text).find()) {
+            tgLogger.log("Нарушение ссылок: " + text, LOG_CHAT_ID);
+            return true;
+        }
+        return false;
     }
 
     public void txtToSet() {
