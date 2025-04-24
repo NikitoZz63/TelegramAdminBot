@@ -55,7 +55,7 @@ public class UserManager {
                     .map(chatMember -> chatMember.getUser().getId())
                     .collect(Collectors.toList());
         } catch (TelegramApiException e) {
-            tgLogger.log("Ошибка получения ID админов: " + e.getMessage(), logChatId);
+            tgLogger.log("Ошибка получения ID админов в чате " + chatId + ". Ошибка: " + e.getMessage(), logChatId);
             return Collections.emptyList();
         }
 
