@@ -10,10 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba64b9c-026f-4750-a630-ae3d2f3291a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/handlers/ViolationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/ViolationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/forbiddenWords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/forbiddenWords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/handlers/ViolationHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/handlers/ViolationHandlerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,8 +95,9 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.codeium.enabled": "true",
-    "com.codeium.snoozedEndTime": "1745466375168",
+    "com.codeium.snoozedEndTime": "0",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -187,7 +189,13 @@
       <workItem from="1744952021252" duration="363000" />
       <workItem from="1744978904686" duration="1308000" />
       <workItem from="1744981933200" duration="698000" />
-      <workItem from="1745462162878" duration="657000" />
+      <workItem from="1745462162878" duration="2285000" />
+      <workItem from="1745483842803" duration="1117000" />
+      <workItem from="1745563891926" duration="55000" />
+      <workItem from="1745563961198" duration="379000" />
+      <workItem from="1745564354547" duration="958000" />
+      <workItem from="1745565330135" duration="1760000" />
+      <workItem from="1745568080618" duration="642000" />
     </task>
     <servers />
   </component>

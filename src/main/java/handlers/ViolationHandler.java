@@ -22,6 +22,7 @@ public class ViolationHandler {
     );
     private static final long LOG_CHAT_ID = -4762815401L;
     private static final Set<String> forbiddenWords = new HashSet<>();
+    private static final Set<String> forbiddenLemmas = new HashSet<>();
     private MessageService messageService;
     private UserManager userManager;
 
