@@ -1,9 +1,9 @@
-package adminTGbot;
+package bot;
 
-import handlers.UpdateHandler;
-import handlers.ViolationHandler;
-import handlers.WelcomeMessageProvider;
-import logger.LoggerToTgChat;
+import bot.handlers.UpdateHandler;
+import bot.handlers.ViolationHandler;
+import config.WelcomeMessageProvider;
+import util.LoggerToTgChat;
 import org.telegram.telegrambots.client.okhttp.OkHttpTelegramClient;
 import org.telegram.telegrambots.longpolling.util.LongPollingSingleThreadUpdateConsumer;
 import org.telegram.telegrambots.meta.api.objects.Update;
@@ -20,7 +20,7 @@ public class AdminBot implements LongPollingSingleThreadUpdateConsumer {
         LoggerToTgChat tgLogger = LoggerToTgChat.getInstance();
 
         MessageService messageService = new MessageService(telegramClient, tgLogger, LOG_CHAT_ID);
-        UserManager userManager = new UserManager(telegramClient, WelcomeMessageProvider.getWelcomMsg(), messageService, tgLogger, LOG_CHAT_ID);
+        UserManager userManager = new UserManager(telegramClient, WelcomeMessageProvider.getWelcomeMsg(), messageService, tgLogger, LOG_CHAT_ID);
         ViolationHandler violationHandler = new ViolationHandler(messageService, userManager);
 
         this.updateHandler = new UpdateHandler(violationHandler, userManager);

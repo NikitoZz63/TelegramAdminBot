@@ -1,13 +1,13 @@
-package DAO;
+package repository;
 
-import entity.UserEntity;
+import domain.entity.UserEntity;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 import java.util.List;
 
-public class UserDAO {
+public class UserRepository {
 
     private static final Session session = new Configuration().configure().buildSessionFactory().openSession();
 

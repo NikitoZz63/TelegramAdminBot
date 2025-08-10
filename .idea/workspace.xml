@@ -10,10 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba64b9c-026f-4750-a630-ae3d2f3291a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/TemplateLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/welcom_chat_otz.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/welcom_chat_test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/welcome_chat_predl.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/adminTGbot/AdminBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adminTGbot/AdminBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/handlers/UpdateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/UpdateHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/handlers/ViolationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/ViolationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/adminTGbot/AdminBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bot/AdminBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/adminTGbot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bot/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/handlers/UpdateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bot/handlers/UpdateHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/handlers/ViolationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bot/handlers/ViolationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/handlers/WelcomeMessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/WelcomeMessageProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logger/LoggerToTgChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/LoggerToTgChat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +143,7 @@
       <envs>
         <env name="TELEGRAM_BOT_TOKEN" value="8206064256:AAGFAngk5Uj5vW586jbvO2yg-Y95G55lMf0" />
       </envs>
-      <option name="MAIN_CLASS_NAME" value="adminTGbot.Main" />
+      <option name="MAIN_CLASS_NAME" value="bot.Main" />
       <module name="adminTGbot.main" />
       <method v="2">
         <option name="Make" enabled="true" />

@@ -1,7 +1,8 @@
-package entity;
+package domain.entity;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.ColumnDefault;
+
 
 @Entity
 @Table(name = "users")

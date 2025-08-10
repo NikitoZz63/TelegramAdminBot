@@ -1,8 +1,8 @@
-package handlers;
+package bot.handlers;
 
-import DAO.UserDAO;
+import repository.UserRepository;
 import com.github.demidko.aot.WordformMeaning;
-import logger.LoggerToTgChat;
+import util.LoggerToTgChat;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.message.Message;
 import services.MessageService;
@@ -25,7 +25,6 @@ public class ViolationHandler {
     );
     private static final long LOG_CHAT_ID = -4762815401L;
     private static final Set<String> forbiddenWords = new HashSet<>();
-    private static final Set<String> forbiddenLemmas = new HashSet<>();
     private MessageService messageService;
     private UserManager userManager;
 
@@ -96,12 +95,12 @@ public class ViolationHandler {
     public void processViolation(Update update, long chatId, long userId, Message message) {
         String username = (message.getFrom().getUserName() != null) ? "@" + message.getFrom().getUserName() : message.getFrom().getFirstName();
 
-        if (!userManager.isAdmin(userId, chatId)) {
+        if (!userManager.isAdmin(chatId, userId)) {
 
             messageService.delMsg(chatId, message.getMessageId());
             userManager.setUserEntity(update);
 
-            if ((UserDAO.getViolationCounter(userId) > 1)) {
+            if ((UserRepository.getViolationCounter(userId) > 1)) {
                 userManager.baneUser(chatId, userId);
                 tgLogger.log("Забанен пользователь " + username, LOG_CHAT_ID);
                 messageService.sendMsg(chatId, "<b>Пользователь</b> " + username + " <b> забанен за нарушение правил чата</b>");

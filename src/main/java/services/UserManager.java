@@ -1,8 +1,8 @@
 package services;
 
-import DAO.UserDAO;
-import entity.UserEntity;
-import logger.LoggerToTgChat;
+import repository.UserRepository;
+import domain.entity.UserEntity;
+import util.LoggerToTgChat;
 import org.telegram.telegrambots.meta.api.methods.groupadministration.BanChatMember;
 import org.telegram.telegrambots.meta.api.methods.groupadministration.GetChatAdministrators;
 import org.telegram.telegrambots.meta.api.methods.groupadministration.RestrictChatMember;
@@ -63,7 +63,7 @@ public class UserManager {
 
     public void setUserEntity(Update update) {
         User user = update.getMessage().getFrom();
-        UserEntity userEntity = UserDAO.getUserByTelegramUserId(user.getId());
+        UserEntity userEntity = UserRepository.getUserByTelegramUserId(user.getId());
 
         if (userEntity == null) {
             userEntity = new UserEntity(
@@ -75,7 +75,7 @@ public class UserManager {
         } else {
             userEntity.setViolationCounter(userEntity.getViolationCounter() + 1);
         }
-        UserDAO.saveUser(userEntity);
+        UserRepository.saveUser(userEntity);
         tgLogger.log("Пользователь " + user.getUserName() + " обновлён/сохранён с ViolationCounter = " + userEntity.getViolationCounter(), logChatId);
     }
 

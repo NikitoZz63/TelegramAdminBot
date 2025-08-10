@@ -1,6 +1,6 @@
 package services;
 
-import logger.LoggerToTgChat;
+import util.LoggerToTgChat;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.updatingmessages.DeleteMessage;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
@@ -58,7 +58,6 @@ public class MessageService {
 
     public void delMsg(long chatId, int messageId) {
         DeleteMessage deleteMessages = new DeleteMessage(String.valueOf(chatId), messageId);
-
         try {
             telegramClient.execute(deleteMessages);
         } catch (TelegramApiException e) {
@@ -67,7 +66,6 @@ public class MessageService {
     }
 
     void scheduleMessageDeletion(long chatId, Integer messageId) {
-
         new Thread(() -> {
             try {
                 Thread.sleep(MESSAGE_DELETION_TIMER * 1000L);
