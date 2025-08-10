@@ -10,11 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba64b9c-026f-4750-a630-ae3d2f3291a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/handlers/ViolationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/ViolationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/handlers/ViolationHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/handlers/ViolationHandlerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +68,13 @@
     &quot;accountId&quot;: &quot;04d50a67-3469-4c3c-80e7-69485255c047&quot;
   }
 }</component>
+  <component name="GradleModuleStateConfig">
+    <option name="configPaths">
+      <map>
+        <entry key="$PROJECT_DIR$" value="$PROJECT_DIR$/build.gradle" />
+      </map>
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.telegram/telegrambots-meta/8.0.0/dfa2f45498fe37162e4f278c495a99885ce96003/telegrambots-meta-8.0.0.jar!/org/telegram/telegrambots/meta/api/methods/send/SendMessage.class" root0="SKIP_INSPECTION" />
   </component>
@@ -98,7 +104,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.codeium.enabled": "true",
     "com.codeium.snoozedEndTime": "0",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "dev",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -116,6 +122,20 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TgBot" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="22" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <envs>
+        <env name="TELEGRAM_BOT_TOKEN" value="8206064256:AAGFAngk5Uj5vW586jbvO2yg-Y95G55lMf0" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="adminTGbot.Main" />
+      <module name="adminTGbot.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>

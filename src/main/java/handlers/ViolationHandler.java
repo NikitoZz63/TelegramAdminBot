@@ -1,6 +1,7 @@
 package handlers;
 
 import DAO.UserDAO;
+import com.github.demidko.aot.WordformMeaning;
 import logger.LoggerToTgChat;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.message.Message;
@@ -13,6 +14,8 @@ import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Pattern;
+
+import static com.github.demidko.aot.WordformMeaning.lookupForMeanings;
 
 public class ViolationHandler {
 
@@ -76,15 +79,27 @@ public class ViolationHandler {
     public boolean containsForbiddenWords(String text) {
         String normalized = normalizeText(text);
 
-        for (String word : forbiddenWords) {
-//            Pattern pattern = Pattern.compile("\\b" + Pattern.quote(word) + "\\b");
-            if (normalized.contains(word)) {
-                tgLogger.log("Нарушение запрещенных слов: " + text + ". Слово: " + word, LOG_CHAT_ID);
+        var meanings = lookupForMeanings(normalized);
+
+
+        for (WordformMeaning meaning : meanings) {
+            String lemma = meaning.getLemma().toString();
+            if (forbiddenWords.contains(lemma)) {
+                tgLogger.log("Нарушение запрещенных слов: " + text + ". Сообщение : " + lemma, LOG_CHAT_ID);
                 return true;
             }
         }
+
+//        for (String word : forbiddenWords) {
+////            Pattern pattern = Pattern.compile("\\b" + Pattern.quote(word) + "\\b");
+//            if (normalized.contains(word)) {
+//                tgLogger.log("Нарушение запрещенных слов: " + text + ". Слово: " + word, LOG_CHAT_ID);
+//                return true;
+//            }
+//        }
         return false;
     }
+
 
     public void processViolation(Update update, long chatId, long userId, Message message) {
         String username = (message.getFrom().getUserName() != null) ? "@" + message.getFrom().getUserName() : message.getFrom().getFirstName();

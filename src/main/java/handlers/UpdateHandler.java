@@ -30,8 +30,8 @@ public class UpdateHandler {
             violationHandler.processViolation(update, chatId, userId, message);
         }
 
-//        if (message.hasText() && violationHandler.containsForbiddenWords(message.getText())) {
-//            violationHandler.processViolation(update, chatId, userId, message);
-//        }
+        if (message.hasText() && violationHandler.containsForbiddenWords(message.getText())) {
+            violationHandler.processViolation(update, chatId, userId, message);
+        }
     }
 }

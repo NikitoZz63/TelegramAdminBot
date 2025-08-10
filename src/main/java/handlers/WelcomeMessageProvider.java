@@ -29,10 +29,10 @@ public class WelcomeMessageProvider {
     private static final String WELCOME_MSG_FOR_TEST = " <b>Добро пожаловать, {username} !</b>";
 
     private static final Map<Long, String> WELCOM_MSG = Map.of(
-            -1001601049760L, WELCOME_MSG_CHAT_OTZ,
-            -1001965242189L, WELCOME_MSG_CHAT_PREDL,
-            -1002366865775L, WELCOME_MSG_FOR_TEST,
-            -4762815401L, WELCOME_MSG_FOR_TEST
+//            -1001601049760L, WELCOME_MSG_CHAT_OTZ,
+//            -1001965242189L, WELCOME_MSG_CHAT_PREDL,
+            -1002366865775L, WELCOME_MSG_FOR_TEST
+//            -4762815401L, WELCOME_MSG_FOR_TEST
 
     );
 
