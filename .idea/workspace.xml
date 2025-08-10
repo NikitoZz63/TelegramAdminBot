@@ -10,9 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba64b9c-026f-4750-a630-ae3d2f3291a4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/adminTGbot/AdminBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adminTGbot/AdminBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/handlers/UpdateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/UpdateHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/handlers/ViolationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/ViolationHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

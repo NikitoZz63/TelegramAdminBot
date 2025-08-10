@@ -13,7 +13,7 @@ public class UpdateHandler {
         this.userManager = userManager;
     }
 
-    public void hundlerUpdate(Update update) {
+    public void handlerUpdate(Update update) {
         if (!update.hasMessage()) return;
 
         Message message = update.getMessage();

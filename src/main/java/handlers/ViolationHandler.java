@@ -89,14 +89,6 @@ public class ViolationHandler {
                 return true;
             }
         }
-
-//        for (String word : forbiddenWords) {
-////            Pattern pattern = Pattern.compile("\\b" + Pattern.quote(word) + "\\b");
-//            if (normalized.contains(word)) {
-//                tgLogger.log("Нарушение запрещенных слов: " + text + ". Слово: " + word, LOG_CHAT_ID);
-//                return true;
-//            }
-//        }
         return false;
     }
 

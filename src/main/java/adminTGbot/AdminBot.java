@@ -30,6 +30,6 @@ public class AdminBot implements LongPollingSingleThreadUpdateConsumer {
 
     @Override
     public void consume(Update update) {
-        updateHandler.hundlerUpdate(update);
+        updateHandler.handlerUpdate(update);
     }
 }
