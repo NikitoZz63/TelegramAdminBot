@@ -1,0 +1,20 @@
+bot:
+  token: ${TELEGRAM_BOT_TOKEN}
+  log-chat-id: -4762815401
+
+welcome:
+  templates:
+      -1001601049760: "welcome_chat_otz.html"
+      -1001965242189: "welcome_chat_predl.html"
+      -1002366865775: "welcome_test.html"
+      -4762815401: "welcome_test.html"
+
+spring:
+  datasource:
+    url: jdbc:postgresql://185.177.219.69:5432/admintgbot
+    username: nikita
+    password: s89612298928d
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
