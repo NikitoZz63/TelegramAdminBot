@@ -12,6 +12,6 @@
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
-        <mapping class="domain.entity.UserEntity"/>
+        <mapping class="spring.admintgbot.entity.ViolatorEntity"/>
     </session-factory>
 </hibernate-configuration>
