@@ -1,0 +1,48 @@
+bot:
+  token: ${TELEGRAM_BOT_TOKEN}
+  log-chat-id: -4921291820
+
+welcome:
+  templates:
+      -1001601049760: "welcome_chat_otz.html"
+      -1001965242189: "welcome_chat_predl.html"
+      -1002366865775: "welcome_test.html"
+      -4762815401: "welcome_test.html"
+
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    hikari:
+      max-lifetime: 300000
+      idle-timeout: 120000
+      validation-timeout: 5000
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate.hibernate.default_schema: tg_admin_bot
+  flyway:
+    enabled: true
+    default-schema: tg_admin_bot     # сюда попадёт flyway_schema_history
+    schemas: [ tg_admin_bot ]          # миграции применяются только к этой схеме
+    create-schemas: true
+
+rules:
+  mute-seconds: 86400            # 24 часа за 1-е нарушение
+  delete-offending-message: true # если punish=true, то ещё и удаляем сообщение
+
+  links:
+    punish: true                 # наказывать за ссылки? (true/false)
+
+  words:
+    punish: false                # наказывать за слова? (true/false)
+    source: "classpath:forbiddenWords.txt"  # словарь (по одному слову/лемме на строку)
+    normalize: true              # нормализация (латиница→кириллица, нижний регистр и т.п.)
+
+security:
+  skip-private: true        # не реагировать в личке
+  protect-admins: true      # не мутить/банить админов и владельца
