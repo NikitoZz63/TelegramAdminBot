@@ -46,3 +46,5 @@ rules:
 security:
   skip-private: true        # не реагировать в личке
   protect-admins: true      # не мутить/банить админов и владельца
+
+

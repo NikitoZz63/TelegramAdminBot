@@ -52,7 +52,7 @@ dependencies {
 }
 
 application {
-    mainClass = 'adminTGbot.Main' // Укажи свой главный класс
+    mainClass = 'spring.admintgbot.AdminTgBotApplication' // Укажи свой главный класс
 }
 
 
@@ -62,9 +62,9 @@ shadowJar {
     archiveVersion.set('1.0')
 }
 
-tasks.named('build') {
-    dependsOn tasks.named('shadowJar')
-}
+tasks.named("jar") { enabled = false }
+tasks.named("bootJar") { enabled = true }
+
 
 test {
     useJUnitPlatform()
