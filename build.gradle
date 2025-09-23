@@ -1,7 +1,5 @@
 plugins {
     id 'java'
-    id 'application'
-    id 'com.github.johnrengelman.shadow' version '8.1.1'
     id 'org.springframework.boot' version '3.5.4'
     id 'io.spring.dependency-management' version '1.1.7'
 }
@@ -29,11 +27,8 @@ dependencies {
     implementation 'org.telegram:telegrambots-springboot-longpolling-starter:9.0.0'
     implementation 'org.telegram:telegrambots-client:9.0.0'
     implementation 'org.telegram:telegrambots-longpolling:9.0.0'
-//    implementation 'org.telegram:telegrambots-meta:8.3.0'
     implementation 'com.github.demidko:aot:2025.02.15'
 
-
-//    implementation 'org.slf4j:slf4j-simple:2.0.7'
 
     implementation 'org.hibernate:hibernate-core:6.6.11.Final'
     implementation 'org.postgresql:postgresql:42.7.5'
@@ -51,15 +46,8 @@ dependencies {
     implementation 'org.flywaydb:flyway-database-postgresql:10.15.2'
 }
 
-application {
-    mainClass = 'spring.admintgbot.AdminTgBotApplication' // Укажи свой главный класс
-}
-
-
-shadowJar {
-    archiveBaseName.set('adminTGbot') // Название файла JAR
-    archiveClassifier.set('all') // Добавляет "-all" в названии JAR
-    archiveVersion.set('1.0')
+springBoot {
+    mainClass = 'spring.admintgbot.AdminTgBotApplication'
 }
 
 tasks.named("jar") { enabled = false }
