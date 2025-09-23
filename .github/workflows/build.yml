@@ -25,6 +25,12 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew clean bootJar  # Запускаем
 
+      - name: Rename bootJar to stable name
+        run: |
+          BOOT_JAR=$(ls build/libs/*.jar | head -n1)
+          cp "$BOOT_JAR" build/libs/adminTgBot.jar
+          ls -lh build/libs/
+
       - name: Get latest tag
         id: get_tag
         run: echo "TAG=$(date +'%Y%m%d%H%M%S')" >> $GITHUB_ENV
@@ -32,7 +38,7 @@ jobs:
       - name: Publish to GitHub Releases
         uses: softprops/action-gh-release@v2
         with:
-          files: build/libs/*.jar  # Указываем путь к JAR-файлу
+          files: build/libs/adminTgBot.jar   # Указываем путь к JAR-файлу
           tag_name: ${{ env.TAG }}  # Используем уникальный тег (дата/время)
           name: "Release ${{ env.TAG }}"  # Название релиза
           token: ${{ secrets.MY_GITHUB_TOKEN }}  # Токен GitHub
