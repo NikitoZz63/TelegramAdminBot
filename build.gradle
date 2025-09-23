@@ -29,7 +29,6 @@ dependencies {
     implementation 'org.telegram:telegrambots-longpolling:9.0.0'
     implementation 'com.github.demidko:aot:2025.02.15'
 
-
     implementation 'org.hibernate:hibernate-core:6.6.11.Final'
     implementation 'org.postgresql:postgresql:42.7.5'
 
