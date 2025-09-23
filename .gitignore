@@ -15,6 +15,15 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+.idea/workspace.xml
+.idea/dataSources.local.xml
+.idea/usage.statistics.xml
+.idea/shelf/
+.idea/httpRequests/
+.idea/**/dictionaries/
+.idea/**/tasks.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
 
 ### Eclipse ###
 .apt_generated
