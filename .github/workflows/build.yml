@@ -23,7 +23,7 @@ jobs:
         run: chmod +x gradlew  # Даём права на выполнение gradlew
 
       - name: Build with Gradle
-        run: ./gradlew shadowJar  # Запускаем shadowJar для сборки fat JAR
+        run: ./gradlew clean bootJar  # Запускаем
 
       - name: Get latest tag
         id: get_tag
